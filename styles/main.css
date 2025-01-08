@@ -439,3 +439,35 @@ body {
     50% { transform: scale(1.2); opacity: 0.2; }
     100% { transform: scale(1); opacity: 0.5; }
 } 
+
+/* Interactive Features Layout */
+.interactive-features {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.feature-card h2 {
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive grid */
+@media (min-width: 768px) {
+    .interactive-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .feature-card:last-child {
+        grid-column: 1 / -1;
+    }
+} 
