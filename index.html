@@ -26,7 +26,7 @@
         <section class="support-options">
             <div class="option-card">
                 <h3>Talk to CWH Bot</h3>
-                <p>Our friendly AI is here for you 24/7! It's still in it's testing phase, For further assistance contact us at copingwithhelp@gmail.com</p>
+                <p>Our friendly AI companion is here 24/7 to listen and chat with you.</p>
                 <button class="chat-button" onclick="openChat()">Start Chatting</button>
             </div>
             <!-- More support options -->
@@ -49,7 +49,30 @@
                 <blockquote>
                     "You are stronger than you know. Your story isn't over yet."
                 </blockquote>
-                <button onclick="newQuote()" class="quote-button">You can do this!</button>
+                <button onclick="newQuote()" class="quote-button">New Quote</button>
+            </div>
+        </section>
+
+        <section class="interactive-features">
+            <!-- Mood Tracker Card -->
+            <div class="feature-card">
+                <h2>Daily Mood Check-in</h2>
+                <div class="mood-tracker">
+                    <h3>How are you feeling today?</h3>
+                    <div class="mood-buttons">
+                        <button class="mood-button" data-mood="great">�</button>
+                        <button class="mood-button" data-mood="good">��</button>
+                        <button class="mood-button" data-mood="okay">😐</button>
+                        <button class="mood-button" data-mood="down">�</button>
+                        <button class="mood-button" data-mood="awful">😢</button>
+                    </div>
+                    <div class="mood-note-container">
+                        <textarea class="mood-note-input" placeholder="Add a note about how you're feeling (optional)"></textarea>
+                    </div>
+                    <div class="mood-history">
+                        <!-- Mood history will be populated here by JavaScript -->
+                    </div>
+                </div>
             </div>
         </section>
     </main>
